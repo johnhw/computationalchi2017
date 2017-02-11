@@ -1,0 +1,121 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="favicon/manifest.json">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="favicon/favicon.ico">
+<meta name="msapplication-config" content="favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+    
+<!-- Bootstrap -->
+<link href="css/bootstrap-superhero.min.css" rel="stylesheet" media="screen"> 
+<link href="css/custom.css" rel="stylesheet" media="screen"> 
+<title> Computational Interaction CHI 2017 </title>
+</head>
+<body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  
+ <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                    
+         <a class="navbar-brand" href="index.html">computationalinteraction.org</a>
+          
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav">      
+              <li class="nav-item"> <a class="nav-item" href="#">Setup</a>  </li>              
+          </ul>
+          
+          <ul class="nav navbar-right">
+          
+              <li class="nav-item"> <a role="button" class="btn btn-primary navbar-btn hidden" href="https://nb.computationalinteraction.org"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> &nbsp  nb.computationalinteraction.org </a> </li> 
+              
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+
+    <div class="container">  
+          <div class="row">
+              <p>
+                  <h1> Setup </h1>
+                  This course involves interactive notebooks, using Python within the Jupyter notebook environment.
+                  There are three ways to use these notes:
+              </p>
+              
+              <p>
+                  <h2> <b> (I) Easy [recommended]: Remote notebook </b> </h2>
+                  You can run all of the materials remotely on our servers. Nothing is installed on your machine. <b>However, these servers will only be available the week of the conference.</b> 
+                  
+                  <ol class="list-group"> 
+                      <li class="list-group-item"> Create a <a href="https://github.com"> GitHub </a> account if you don't already have one.
+                      <li class="list-group-item"> Send your GitHub username to <a href="sendto:johnhw@gmail.com"> johnhw@gmail.com </a> to
+                      request access.  </li>
+                      <li class="list-group-item"> Then hit the button below, and log in:<br>
+                      <a role="button" class="btn btn-primary navbar-btn" href="https://nb.computationalinteraction.org"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> &nbsp  Live notebooks </a>  </li>
+                      
+                  </ol>
+              </p>
+              
+              <p>
+                  <h2> (II) Semi-easy: Local notebook container </h2>
+                  You can run the notebook inside a server container on your own machine. This container is isolated, and will not affect any other part of your Python install. To do this:
+                  <ol class="list-group">
+                  
+                    <li class="list-group-item"> Install <a href="https://www.vagrantup.com/"> Vagrant </a> for your platform (Windows, OS X and Linux are all supported).
+                    <li class="list-group-item"> Download and expand <a href=""> this zip </a> into a new, empty folder somewhere on your machine (e.g. <code>~/chi17vagrant</code>).
+                    <li class="list-group-item"> Open a terminal.
+                    <li class="list-group-item"> Navigate to the folder with the <code>Vagrantfile</code> (e.g. <code> cd ~/chi17vagrant </code>)
+                    <li class="list-group-item"> Enter <code>vagrant up</code> in the terminal. If you get an error about Docker, run <code> vagrant up </code> again
+                    <li class="list-group-item"> <b> The first time you do this, it will take some time to download all of the files (10 mins or so, depending on your network connection). </b>
+                    <li class="list-group-item"> You should be able to access the materials by following this link to <a href="localhost:9000"> localhost:9000 </a> in your browser.                  
+                  
+                  </ol>                  
+              </p>
+              
+              <p>
+                  <h2> (III) Advanced: Set up Jupyter/Python manually </h2>
+                  You can install your own Python environment, or use your existing setup. You are on your own if you attempt this method. We assume you know what you are doing!
+                  <ol class="list-group">
+                  
+                    <li class="list-group-item"> If you don't have a working Python installation with the standard scientific packages (scipy, numpy, matplotlib, etc.), we strongly recommend using the
+                        <a href="http://continuum.io/anaconda">Anaconda</a> package. This supplies all of the dependencies, and is available for all major platforms.
+                    <li class="list-group-item">      
+                        <a  href="https://github.com/johnhw/computationalchi2017/archive/master.zip">Download the notes from GitHub  </a> and expand the zip into a folder somewhere (e.g <code>~/chi17</code>)
+                    <li class="list-group-item" > Open a terminal
+                    <li class="list-group-item"> Navigate to the directory where you downloaded the notes (e.g. <code> cd ~/chi17 </code>)
+                    <li class="list-group-item"> Enter <code>jupyter notebook</code> to launch the notebook.
+                  
+                  </ol>                  
+              </p>
+             
+              
+              
+          </div>
+      </div>
+      
+    </body>
+</html>
