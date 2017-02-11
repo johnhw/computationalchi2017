@@ -1,3 +1,4 @@
 [submodule "probabilisticfiltering"]
 	path = probabilisticfiltering
 	url = https://github.com/johnhw/probabilisticfiltering
+	branch = master
