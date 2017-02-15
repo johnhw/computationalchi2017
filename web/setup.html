@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
           </button>
                     
-         <a class="navbar-brand" href="index.html">computationalinteraction.org</a>
+         <a class="navbar-brand" href="index.html">chi17.computationalinteraction.org</a>
           
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -61,36 +61,47 @@
 
     <div class="container">  
           <div class="row">
+            <div class="col-md-1"> </div>
+            <div class="col-md-10">
               <p>
                   <h1> Setup </h1>
-                  This course involves interactive notebooks, using Python within the Jupyter notebook environment.
+                  This course involves interactive notebooks, using Python within the Jupyter notebook environment. This lets us present live code examples
+                  alongside written notes.
+                  
                   There are three ways to use these notes:
               </p>
               
               <p>
-                  <h2> <b> (I) Easy [recommended]: Remote notebook </b> </h2>
+                  <h2> <b> Easy [recommended]: Remote notebook </b> </h2>
                   You can run all of the materials remotely on our servers. Nothing is installed on your machine. <b>However, these servers will only be available the week of the conference.</b> 
-                  
+             </p>
+             <p>
                   <ol class="list-group"> 
                       <li class="list-group-item"> Create a <a href="https://github.com"> GitHub </a> account if you don't already have one.
-                      <li class="list-group-item"> Send your GitHub username to <a href="sendto:johnhw@gmail.com"> johnhw@gmail.com </a> to
+                      <li class="list-group-item"> Send your GitHub username to <a href="maito:jhw@dcs.gla.ac.uk"> jhw@dcs.gla.ac.uk </a> to
                       request access.  </li>
-                      <li class="list-group-item"> Then hit the button below, and log in:<br>
+                      <li class="list-group-item"> Then hit the button below, and log in via GitHub if requested:<br>
                       <a role="button" class="btn btn-primary navbar-btn" href="https://nb.computationalinteraction.org"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> &nbsp  Live notebooks </a>  </li>
                       
                   </ol>
               </p>
               
               <p>
-                  <h2> (II) Semi-easy: Local notebook container </h2>
-                  You can run the notebook inside a server container on your own machine. This container is isolated, and will not affect any other part of your Python install. To do this:
+                  <h2>  Semi-easy: Local notebook container </h2>
+                  You can run the notebook inside a server container on your own machine. This container is isolated, and exactly replicates the environment on the notebook server. It will not affect any other part of your Python install. 
+              </p>
+              <p>
+                  <i> If you are going to use this method, please make sure you have setup and tested the environment before the course starts </i>
+              </p>
+              <p>
                   <ol class="list-group">
-                  
+              </p>
+              <p>
                     <li class="list-group-item"> Install <a href="https://www.vagrantup.com/"> Vagrant </a> for your platform (Windows, OS X and Linux are all supported).
                     <li class="list-group-item"> Download and expand <a href=""> this zip </a> into a new, empty folder somewhere on your machine (e.g. <code>~/chi17vagrant</code>).
                     <li class="list-group-item"> Open a terminal.
-                    <li class="list-group-item"> Navigate to the folder with the <code>Vagrantfile</code> (e.g. <code> cd ~/chi17vagrant </code>)
-                    <li class="list-group-item"> Enter <code>vagrant up</code> in the terminal. If you get an error about Docker, run <code> vagrant up </code> again
+                    <li class="list-group-item"> Navigate to the folder with the <code>Vagrantfile</code> (e.g. <code> cd ~/chi17vagrant</code>)
+                    <li class="list-group-item"> Enter <code>vagrant up</code> in the terminal. If you get an error about Docker, run <code>vagrant up</code> again
                     <li class="list-group-item"> <b> The first time you do this, it will take some time to download all of the files (10 mins or so, depending on your network connection). </b>
                     <li class="list-group-item"> You should be able to access the materials by following this link to <a href="localhost:9000"> localhost:9000 </a> in your browser.                  
                   
@@ -98,12 +109,20 @@
               </p>
               
               <p>
-                  <h2> (III) Advanced: Set up Jupyter/Python manually </h2>
-                  You can install your own Python environment, or use your existing setup. You are on your own if you attempt this method. We assume you know what you are doing!
+                  <h2>  Advanced: Set up Jupyter/Python manually </h2>
+                  You can install your own Python 2.7 environment, or use your existing setup. You are on your own if you attempt this method. We assume you know what you are doing!
+                  <b> Make sure you are using/install <i>Python 2.7</i> </b>
+              </p>
+              <p>
+                  <i> If you are going to use this method, please make sure you have setup and tested the environment before the course starts </i>
+              </p>
+              <p>
                   <ol class="list-group">
                   
-                    <li class="list-group-item"> If you don't have a working Python installation with the standard scientific packages (scipy, numpy, matplotlib, etc.), we strongly recommend using the
+                    <li class="list-group-item"> If you don't have a working Python 2.7 installation with the standard scientific packages (scipy, numpy, matplotlib, etc.), we strongly recommend using the
                         <a href="http://continuum.io/anaconda">Anaconda</a> package. This supplies all of the dependencies, and is available for all major platforms.
+                    <li class="list-group-item"> If you are <b> not </b> using Anaconda, then please check the <a href="requirements.txt"> dependency list </a>
+                    
                     <li class="list-group-item">      
                         <a  href="https://github.com/johnhw/computationalchi2017/archive/master.zip">Download the notes from GitHub  </a> and expand the zip into a folder somewhere (e.g <code>~/chi17</code>)
                     <li class="list-group-item" > Open a terminal
@@ -113,7 +132,7 @@
                   </ol>                  
               </p>
              
-              
+            </div>  
               
           </div>
       </div>

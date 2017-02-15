@@ -45,10 +45,12 @@
         <div id="navbar" class="navbar-collapse collapse">
           
           <ul class="nav navbar-nav">      
-              <li class="nav-item"> <a class="nav-item" href="#outline">Outline</a>  </li>
-              <li class="nav-item"> <a class="nav-item" href="#citing">Citing</a>  </li>
-              <li class="nav-item hidden"> <a class="nav-item" href="#download">Download</a>  </li>
-              <li class="nav-item hidden"> <a class="nav-item" href="setup.html">Setup</a>  </li>
+                <li class="nav-item"> <a class="nav-item" href="#outline">Outline</a>  </li>
+                <li class="nav-item"> <a class="nav-item" href="#attending">Attending</a>  </li>    
+                <li class="nav-item"> <a class="nav-item" href="#citing">Citing</a>  </li>
+                          
+                <li class="nav-item hidden"> <a class="nav-item" href="#download">Download</a>  </li>
+                <li class="nav-item hidden"> <a class="nav-item" href="setup.html">Setup</a>  </li>
           </ul>
           
           <ul class="nav navbar-right">
@@ -74,6 +76,7 @@
                 <h3> ACM SIGCHI  CHI 2017 Course Notes </h3>
                  
                 <p></p>
+                <p>Monday 8th May 2017</p>
                 <p><a class="btn btn-primary btn-lg" href="https://www.regonline.com/registration/Checkin.aspx?EventID=1895222" role="button">Register</a></p> 
                 
                   <a role="button" class="btn btn-primary navbar-btn hidden" href="https://nb.computationalinteraction.org"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> &nbsp  Live notebooks </a> 
@@ -116,7 +119,7 @@
         <div class="col-md-3">
           <h3><a href="http://johnhw.com"> John Williamson </a></h3>
           <p>University of Glasgow, United Kingdom</p>
-          <img src="img/jhw.png" height="100px">
+          <img src="img/jhw_color_2.png" height="100px">
           
         </div>
         
@@ -144,58 +147,107 @@
       </div>
       
    <div class="row">
-       <h3> Summary & objectives </h3>        
-            This is a <b>3-credit</b> course in the ACM SIGCHI program, and is delivered in 3x80 minute blocks.
-            <br><br>
-            The course will cover:
+       <div class="col-md-1">
+       </div>
+       <div class="col-md-10">
+
+            <h3> Summary & objectives </h3>        
+                        
+            <p> <b> The course will cover: </b> </p>
             <ul class="list-group">
                 <li class="list-group-item"> <b> Optimisation:</b> solving interaction problems by deriving interface configurations which satisfy constraints and maximize performance criteria.
                 <li class="list-group-item"> <b> Inference:</b> a principled and robust approach to designing a transformation from input to useful action.
             </ul>
             
-            This course will:
+            <p> <b> This course will: </b> </p>
             <ul>
                 <li>  demonstrate how computational approaches can turn new technologies into viable interfaces while reducing inconsistency;
                 <li>  extend researchers' capabilities to build robust interactions across a wide range of contexts and devices;
                 <li> show how computational approaches can focus interaction design on the interesting work of specifying the questions, and letting computational methods resolve the answers.
             </ul>
-            
+        </div>
     </div>
     
-      <div class="row">
-            <h2> Prerequisites </h2>
-            <p>
-            <b> Background </b>
-            To get the most out of this course, participants should have working knowledge of undergraduate mathematics, particularly basic probabilty and linear algebra (even if it is a vague and rusty memory!). 
-            </p>
-            <p>
-            <b> Software </b>
-            All of the materials will be delivered as interactive <a href="http://jupyter.org">Jupyter notebooks</a>, which interleave notes and live coding examples. All coding examples will be in Python, and familiarity with <a href="http://python.org">Python</a> is strongly recommended. <i>Participants should bring laptops, and will be able to run course materials during the course without any installation. </i> We also provide the materials for download and use on your own machine before and after the conference course sessions. 
-            <br><br>
-            <b> There are no printed materials; this course is delivered solely as interactive electronic materials. </b> 
-            <br>
+    <div class="row">
+        <div class="col-md-1">
+       </div>
+       <div class="col-md-10">
+            <h2 id="#attending"> Attending </h2>
+            <h4> Timing </h4>
+            <p> 
+                <ul>
+                <li> This is a <b>3-credit</b> course in the <a href="https://chi2017.acm.org/courses.html">ACM SIGCHI course program</a>
+                <li> It is delivered in 3x80 minute blocks.
+                <li> The course will take place starting at 11:30AM on Monday 8th May.
+                <li>                The course code is C03.
+                </ul>
+                
             
             </p>
-      
+            <div class="hidden">
+                <p> <i> Provisional </i> schedule </p>
+                <p> <b> May 8th 2017 </b> </p>
+                <table class="table">
+                    <tr> <td> Block 1 </td> <td> 11:30 - 12:10 </td> <td> Introduction to computational interaction design </td> </tr>
+                    <tr> <td> </td>  <td> 12:10 - 12:50 </td> <td> <a href="#i-layout"> Designing layouts with combinatorial optimization  </a> </td> </tr>
+                    <tr> <td> </td>  <td colspan="2"> <i> Break </i> </td>  </tr>
+                       
+                    <tr> <td> Block 2 </td> <td> 14:00 - 14:40 </td> <td> <a href="#i-vision"> Machine learning for vision-based interaction </a> </td> </tr>
+                    <tr> <td> </td> <td> 14:40 - 15:20 </td> <td> <a href="#i-motion">Robust motion-based interfaces using probabilistic state tracking </a> </td>   </tr>
+                    <tr> <td> </td> <td colspan="2"> <i> Break </i> </td>  </tr>
+                    
+                    <tr> <td> Block 3 </td>  <td> 16:00 - 16:40 </td> <td> <a href="#i-text"> Probabilistic decoding for intelligent text entry  </a> </td> </tr> 
+                    <tr> <td> </td> <td> 16:40 - 17:20 </td><td> Summary and discussion </td> </tr>
+                    <tr> <td> </td> </tr>    
+                </table>
+            </div>
+            <p>
+                <h4> Pre-requisites </h4>
+                To get the most out of this course, participants should have working knowledge of undergraduate mathematics, particularly basic probabilty and linear algebra (even if it is a vague and rusty memory!). 
+            </p>
+            <p>
+                <h4> Software and preparation </h4>
+                All of the materials will be delivered as interactive <a href="http://jupyter.org">Jupyter notebooks</a>, which interleave notes and live coding examples. All coding examples will be in Python, and familiarity with <a href="http://python.org">Python</a> is strongly recommended. We also provide the materials for download and use on your own machine before and after the conference course sessions. 
+                
+                <h4> <b> <center> Participants must bring laptops to participate. </center> </b> </h4>
+                Participants will be able to run course materials during the course . There are no printed materials; this course is delivered solely as interactive electronic materials. 
+                <br>
+               
+                <div class="hidden"> 
+                   <b> Please make sure you have read the <a href="setup.html"> the setup page </a> and tested that you are able to access and run the materials on your machine.</b>
+                   Note that if you use the "easy" option, you do not have to install anything on your machine.
+               </div>
+               
+               <div>
+                    We will post detailed instructions so participants can prepare for the interactive electronic course materials in advance of the course.
+               </div>
+            </p>
+        </div>
       </div>
       
+
+      
       <div class="row" id="outline">
-        <h1> Outline </h1>
-        <!--
-        These links will take you to a static view of the notebooks on GitHub for reference. It is recommended to <a href="#download">download</a> the course materials and set 
-        them up on your machine so that you can run and modify the code directly.
-        -->
-        
+           <div class="col-md-1">
+           </div>
+           <div class="col-md-10">
+                <h1> Outline </h1>
+                <!--
+                These links will take you to a static view of the notebooks on GitHub for reference. It is recommended to <a href="#download">download</a> the course materials and set 
+                them up on your machine so that you can run and modify the code directly.
+                -->
+           </div>
       </div>
       
         
       <div class="row">
-        <div class="col-md-3">  
+       <div class="col-md-1"> </div>
+       <div class="col-md-3">  
             <br>
             <img src="img/1_optimization.png"  class="img-responsive">
         </div>
-        <div class="col-md-9">
-                <h2> <a href="#" > Designing layouts with combinatorial optimization </a> </h2>
+        <div class="col-md-8">
+                <h2 id="i-layouts"> <a href="#" > Designing layouts with combinatorial optimization </a> </h2>
                 <b> Antti Oulasvirta </b><br>
                 This part introduces combinatorial optimization methods: algorithmically searching for combinations of design decisions that best fulfill given goodness criteria. After an overview, three hands-on exercises focus on core requirements:
                 definition of design tasks as search problems, algorithmic approaches to searching the defined design spaces, and developing objective functions using design knowledge and theories.
@@ -211,13 +263,15 @@
         </div>
         
       <div class="row">
+        <div class="col-md-1"> </div>
+       
         <div class="col-md-3">  
             <br>
             <img src="img/3_vision.png"  class="img-responsive">
         </div>
-        <div class="col-md-9">
+        <div class="col-md-8">
         
-                <h2> <a href="#"> Machine learning for vision-based interaction </a> </h2>
+                <h2 id="i-vision"> <a href="#"> Machine learning for vision-based interaction </a> </h2>
                 <b> Otmar Hilliges </b><br>            
                 Recovering intent from low-level sensor data is a core problem in many interactive systems. This section of the course will introduce the participants to the basic problems and available solutions surrounding human action recognition from sensor data. After an overview of relevant HCI problems we will give an introduction to succesful machine-learning models and how to apply these to common tasks such as static and dynamic gesture recognition. 
                 
@@ -233,13 +287,15 @@
         </div>
         
         <div class="row">
+            <div class="col-md-1"> </div>
+       
             <div class="col-md-3">  
                 <br>
                 <img src="img/2_probfilter.png"  class="img-responsive">
             </div>
-            <div class="col-md-9">
+            <div class="col-md-8">
                 
-                <h2> <a href="#"> Robust motion-based interfaces using probabilistic state tracking </a> </h2>
+                <h2 id="i-motion"> <a href="#"> Robust motion-based interfaces using probabilistic state tracking </a> </h2>
                         <b> John Williamson </b><br>
                         Probabilistic tracking is able to maintain a continuously evolving set of hypotheses about user intent, and update them according to evidence observed. This is a natural, principled way to robustly infer what a user wants to do from measurements observed from an input device. This section will cover applying sequential probabilistic tracking to a range of sensors. Sophisticated, high-dimensional, noisy sensors are becoming an important part of interactive systems. 
                         <br>
@@ -259,12 +315,14 @@
         </div>
         
         <div class="row">
+            <div class="col-md-1"> </div>
+       
             <div class="col-md-3">  
                     <br>
                     <img src="img/4_text.png"  class="img-responsive">
             </div>
-            <div class="col-md-9">
-                <h2> <a href="#"> Probabilistic decoding for intelligent text entry </a> </h2>
+            <div class="col-md-8">
+                <h2 id="i-text"> <a href="#"> Probabilistic decoding for intelligent text entry </a> </h2>
                 <b> Per Ola Kristensson </b><br>
                 This section will view text entry design as fundamentally a problem of decoding the user's intended text from noisy observations from a variety of sensors, such as touchscreens or depth sensors. The section will introduce key concepts in statistical language processing and give an overview of how to design and implement a probabilistic decoder for text entry. The section will illustrate how such decoding enable the design of several new text entry methods for a variety of use cases.            
                 
@@ -282,22 +340,24 @@
       
       
       <div class="row" id="citing">
-       
-          <p>
-              <h3> Citing </h3>
-              To cite this course, use the following BibTeX entry:
+       <div class="col-md-1"> </div>
+           <div class="col-md-10"> 
+              <p>
+                  <h3> Citing </h3>
+                  To cite this course, use the following BibTeX entry:
+                  
+                  <pre>
+                      @inproceedings{computationalinteractioncourse:2017,
+                                      author = {Otmar Hilliges and Per Ola Kristensson and Antti Oulasvirta\
+                                      and John Williamson},
+                                      title = {Computational Interaction Design},
+                                      booktitle = {ACM SIGCHI 2017 Courses},
+                                      year = {2017}}                    
+                  </pre>
+                  
               
-              <pre>
-                  @inproceedings{computationalinteractioncourse:2017,
-                                  author = {Otmar Hilliges and Per Ola Kristensson and Antti Oulasvirta and John Williamson},
-                                  title = {Computaional Interaction Design},
-                                  booktitle = {ACM SIGCHI 2017 Courses},
-                                  year = {2017}}                    
-              </pre>
-              
-          
-          </p>
-      
+              </p>
+            </div>
       </div>
       
       
@@ -306,12 +366,11 @@
           <div class="row">
               <p>
               <h2> Download notes </h2>
-              All of the notes are provided as <a href="http://jupyter.org"> Jupyter notebooks </a> on GitHub. 
+              All of the notes are provided as Jupyter notebooks on <a href="https://github.com/johnhw/computationalchi2017"> our GitHub repository. </a>
               </p>
               <p>
-              <a class="btn btn-primary" role="button" href="https://github.com/johnhw/computationalchi2017">Browse</a>              
-
-              <a class="btn btn-primary" role="button" href="https://github.com/johnhw/computationalchi2017/archive/master.zip">Download zip</a>
+            
+              <a class="btn btn-primary" role="button" href="https://github.com/johnhw/computationalchi2017/archive/master.zip">Download ZIP</a>
               
                 <br><br>
               
